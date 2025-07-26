@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ViaNova - Travel Smarter, Together</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #007377;
+      color: white;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    nav {
+      background-color: #005c5c;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #FFD700;
+    }
+    .hero {
+      padding: 4rem 2rem;
+      background: linear-gradient(to right, #007377, #00a4a4);
+      color: white;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+      animation: fadeInUp 1s ease-in-out;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .feature {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+    .auth-buttons {
+      display: flex;
+      gap: 1rem;
+    }
+    .auth-buttons a {
+      background-color: white;
+      color: #007377;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+    }
+    .auth-buttons a:hover {
+      background-color: #FFD700;
+      color: #005c5c;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ViaNova</h1>
+    <p>Your Intelligent Travel Companion</p>
+  </header>
+  <nav>
+    <div>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="auth-buttons">
+      <a href="#">Login</a>
+      <a href="#">Sign Up</a>
+    </div>
+  </nav>
+  <section class="hero">
+    <h2>Plan Smarter. Connect Deeper. Travel Freely.</h2>
+    <p>AI-powered itineraries, shared memories, and lifelong travel bonds — all in one app.</p>
+  </section>
+  <section class="section" id="features">
+    <h2>Why Choose ViaNova?</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>AI Travel Planner</h3>
+        <p>Create custom itineraries, visa reminders, legal info, and shopping tips with smart automation.</p>
+      </div>
+      <div class="feature">
+        <h3>Group Chat & Planning</h3>
+        <p>Coordinate activities, share allergies/preferences, and keep everyone in sync.</p>
+      </div>
+      <div class="feature">
+        <h3>Connect with Travelers</h3>
+        <p>Meet like-minded explorers or join local experiences to create lasting memories.</p>
+      </div>
+      <div class="feature">
+        <h3>Photo Timeline</h3>
+        <p>Upload photos by day, create reels, and order printed albums to preserve your journey.</p>
+      </div>
+      <div class="feature">
+        <h3>Location Tracking</h3>
+        <p>Track luggage and friends, especially useful for solo travelers or busy group trips.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="about">
+    <h2>About ViaNova</h2>
+    <p>ViaNova blends AI precision with human warmth to transform how people travel. We believe every journey is unique, and our platform is built to help you travel not just smarter — but together.</p>
+  </section>
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: hello@vianova.app</p>
+    <p>Follow us on Instagram: @vianova.travel</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 ViaNova. All rights reserved.</p>
+  </footer>
+</body>
+</html>
